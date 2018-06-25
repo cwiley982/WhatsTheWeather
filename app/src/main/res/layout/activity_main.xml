@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/clouds"/>
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:text="Enter a Zip Code..."
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prompt"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:inputType="textCapWords"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/weatherBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cityName"
+        android:layout_marginTop="20dp"
+        android:text="What's the weather"
+        android:onClick="getCity"/>
+
+    <TextView
+        android:id="@+id/weatherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/weatherBtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"/>
+
+</android.widget.RelativeLayout>
